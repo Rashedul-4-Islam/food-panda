@@ -27,7 +27,7 @@ const SingleFood = (props) => {
                  Area: {singelFood.strArea}
                 </Card.Text>
                 <Card.Text >
-                Instruction : {singelFood.strInstructions.slice(0 ,200)}
+                Instruction : {singelFood.strInstructions}
                 </Card.Text>
             </Card.Body>
             </Card>
