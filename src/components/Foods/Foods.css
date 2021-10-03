@@ -10,3 +10,9 @@
     margin: 20px auto;
     width: 25%;
 }
+@media only screen and (max-width: 600px) {
+    .food-details{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+  }

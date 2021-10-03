@@ -11,3 +11,9 @@
 .image{
     width: 350px;
 }
+
+@media only screen and (max-width: 600px) {
+     .singel-card{
+         width:100vw;
+     }
+  }
