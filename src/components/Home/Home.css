@@ -1,0 +1,9 @@
+.home{
+    font-weight: 700;
+    margin: 50px auto;
+    background-color: #D70F64;
+    color: white;
+    width: 50%;
+    padding: 20px;
+    border-radius: 50px;
+}

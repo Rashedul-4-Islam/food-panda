@@ -1,0 +1,13 @@
+.singel-card{
+    width: 20%;
+    margin: 10px auto;
+}
+.over{
+    padding: 10px;
+    width: 400px;
+    border: 2px solid gray;
+    box-shadow: 5px 10px 15px greenyellow;
+}
+.image{
+    width: 350px;
+}

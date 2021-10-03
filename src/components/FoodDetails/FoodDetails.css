@@ -1,0 +1,11 @@
+.card-style{
+    border: 2px solid #D70F64;
+    padding: 10px;
+}
+.details{
+    background-color: #D70F64;
+    border-radius: 10px;
+    font-weight: bold;
+    color:white;
+    padding: 5px 10px;
+}
