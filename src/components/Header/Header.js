@@ -1,8 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
 import logo from '../../image/logo.55c2c6fa.svg';
 import './Header.css'
 const Header = () => {
+    const {user,logOut} = useAuth();
     return (
         <>
              <div>
@@ -29,7 +31,7 @@ const Header = () => {
                         fontWeight: "bold",
                         color: "blue"
                     }}>
-                     Track
+                     Order-Now
                  </NavLink>
                  <NavLink to="/support"
                     activeStyle={{
@@ -38,6 +40,19 @@ const Header = () => {
                     }}>
                      Support
                  </NavLink>
+                 {/* <NavLink to="/register"
+                    activeStyle={{
+                        fontWeight: "bold",
+                        color: "blue"
+                    }}>
+                     Register
+                 </NavLink> */}
+                 <span className="text-warning me-3 fw-bold">{user.displayName}</span>
+                {
+                    user.email ? 
+                    <button onClick={logOut} className="btn btn-warning">Log Out</button> :
+                    <NavLink to="/login">Login</NavLink>
+                }
                 </div>
              </nav>
            
